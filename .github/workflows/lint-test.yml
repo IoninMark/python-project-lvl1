@@ -4,5 +4,5 @@ jobs:
   my-job:
     runs-on: macos-latest
     steps:
-      - name: first-step
+      - name: lint-check
         run: make lint
