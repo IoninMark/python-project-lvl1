@@ -1,8 +1,19 @@
 name: lint-test
-on: push
+
+on:
+  - push
+  - pull_request
+
 jobs:
-  my-job:
+  build:
     runs-on: macos-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
       - name: lint-check
-        run: make lint
+        run: |
+          make lint
