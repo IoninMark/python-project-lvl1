@@ -17,7 +17,8 @@ def even_game():
                 print('Correct!')
                 correct_answ_cnt += 1
             else:
-                print("'{}' is wrong answer ;(. Correct answer was 'yes'.".format(answer))
+                print("'{}' is wrong answer ;(."
+                " Correct answer was 'yes'.".format(answer))
                 print("Let's try again, {}!".format(name))
                 return
         else:
@@ -25,8 +26,8 @@ def even_game():
                 print('Correct!')
                 correct_answ_cnt += 1
             else:
-                print("'{}' is wrong answer ;(. Correct answer was 'no'.".format(answer))
+                print("'{}' is wrong answer ;(."
+                " Correct answer was 'no'.".format(answer))
                 print("Let's try again, {}!".format(name))
                 return
     print('Congratulations, {}!'.format(name))
-    
