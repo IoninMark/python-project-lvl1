@@ -4,3 +4,4 @@
 ![example workflow](https://github.com/IoninMark/python-project-lvl1/actions/workflows/lint-test.yml/badge.svg)
 [![asciicast](https://asciinema.org/a/LaaNko38u5YSxWaZU3JSepxyq.svg)](https://asciinema.org/a/LaaNko38u5YSxWaZU3JSepxyq)
 [![asciicast](https://asciinema.org/a/hbftc2Cs97SiSNn4f0djYxcFe.svg)](https://asciinema.org/a/hbftc2Cs97SiSNn4f0djYxcFe)
+[![asciicast](https://asciinema.org/a/TvxRZMk39FiAc2nE8ebwJyPat.svg)](https://asciinema.org/a/TvxRZMk39FiAc2nE8ebwJyPat)
