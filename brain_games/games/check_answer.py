@@ -1,12 +1,13 @@
 import prompt
 
 
-def check_answer(question, right_answr):
+def check_answer(question, right_answer):
     print('Question: ', question)
     answer = prompt.string('Your answer: ')
-    if str(answer) == str(right_answr):
+    s = f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'."
+    if str(answer) == str(right_answer):
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{right_answr}'.")
+        print(s)
         return False
