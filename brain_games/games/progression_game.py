@@ -26,7 +26,7 @@ def progression_game():
 
 def create_progression(first_elem, length, diff, index):
     progression = ''
-    for i in range(length):
+    for i in range(length + 1):
         if i == index:
             progression = progression + '.. '
         else:
