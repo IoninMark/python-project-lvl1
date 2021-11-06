@@ -2,7 +2,7 @@ import prompt
 
 
 def check_answer(question, right_answer):
-    print('Question: ', question)
+    print('Question: ', str(question))
     answer = prompt.string('Your answer: ')
     s = f"'{answer}' is wrong answer ;(. Correct answer was '{right_answer}'."
     if str(answer) == str(right_answer):

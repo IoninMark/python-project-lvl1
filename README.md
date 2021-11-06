@@ -15,3 +15,13 @@ There are 5 games in it:
 * Brain-gcd
 * Brain-progression
 * Brain-prime 
+
+This project uses:
+* Poetry
+* Flake8
+
+To install package use:
+
+python3 -m pip install --user git+https://github.com/IoninMark/python-project-lvl1.git
+
+After installation games are available in bash by their names
