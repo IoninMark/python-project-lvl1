@@ -12,8 +12,7 @@ def calc_game():
         operations_list = ['+', '-', '*']
         question = str(num1) + ' ' + choice(operations_list) + ' ' + str(num2)
         right_answr = eval(question)
-        if check_answer(question, right_answr, name):
+        if check_answer(question, right_answr, name, right_answ_cnt):
             right_answ_cnt += 1
         else:
             return
-    print(f'Congratulations, {name}!')

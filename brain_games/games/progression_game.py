@@ -13,11 +13,10 @@ def progression_game():
         index = randint(0, progr_len)
         question = create_progression(first_num, progr_len, progr_diff, index)
         right_answr = first_num + index * progr_diff
-        if check_answer(question, right_answr, name):
+        if check_answer(question, right_answr, name, right_answ_cnt):
             right_answ_cnt += 1
         else:
             return
-    print(f'Congratulations, {name}!')
 
 
 def create_progression(first_elem, length, diff, index):

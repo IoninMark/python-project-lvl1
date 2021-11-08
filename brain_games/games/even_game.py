@@ -9,13 +9,12 @@ def even_game():
     while right_answ_cnt < 3:
         num = randint(1, 100)
         if num % 2 == 0:
-            if check_answer(num, 'yes', name):
+            if check_answer(num, 'yes', name, right_answ_cnt):
                 right_answ_cnt += 1
             else:
                 return
         else:
-            if check_answer(num, 'no', name):
+            if check_answer(num, 'no', name, right_answ_cnt):
                 right_answ_cnt += 1
             else:
                 return
-    print(f'Congratulations, {name}!')

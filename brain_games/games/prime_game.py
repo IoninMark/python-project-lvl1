@@ -14,11 +14,10 @@ def prime_game():
             right_answr = 'yes'
         else:
             right_answr = 'no'
-        if check_answer(question, right_answr, name):
+        if check_answer(question, right_answr, name, right_answ_cnt):
             right_answ_cnt += 1
         else:
             return
-    print(f'Congratulations, {name}!')
 
 
 def is_prime(num):

@@ -11,11 +11,10 @@ def gcd_game():
         num2 = randint(1, 100)
         question = str(num1) + ' ' + str(num2)
         right_answr = find_gcd(num1, num2)
-        if check_answer(question, right_answr, name):
+        if check_answer(question, right_answr, name, right_answ_cnt):
             right_answ_cnt += 1
         else:
             return
-    print(f'Congratulations, {name}!')
 
 
 def find_gcd(num1, num2):
