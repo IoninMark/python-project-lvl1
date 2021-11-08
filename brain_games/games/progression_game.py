@@ -1,13 +1,10 @@
-import prompt
 from random import randint
-from brain_games.games.check_answer import check_answer
+from brain_games.games.check_answer import check_answer, greet
 
 
 def progression_game():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What number is missing in the progression?')
+    rules = 'What number is missing in the progression?'
+    name = greet(rules)
     right_answ_cnt = 0
     while right_answ_cnt < 3:
         first_num = randint(1, 50)
@@ -16,10 +13,9 @@ def progression_game():
         index = randint(0, progr_len)
         question = create_progression(first_num, progr_len, progr_diff, index)
         right_answr = first_num + index * progr_diff
-        if check_answer(question, right_answr):
+        if check_answer(question, right_answr, name):
             right_answ_cnt += 1
         else:
-            print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
 

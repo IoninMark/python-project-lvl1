@@ -1,13 +1,10 @@
-import prompt
 from random import randint, choice
-from brain_games.games.check_answer import check_answer
+from brain_games.games.check_answer import check_answer, greet
 
 
 def calc_game():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What is the result of the expression?')
+    rules = 'What is the result of the expression?'
+    name = greet(rules)
     right_answ_cnt = 0
     while right_answ_cnt < 3:
         num1 = randint(1, 100)
@@ -15,9 +12,8 @@ def calc_game():
         operations_list = ['+', '-', '*']
         question = str(num1) + ' ' + choice(operations_list) + ' ' + str(num2)
         right_answr = eval(question)
-        if check_answer(question, right_answr):
+        if check_answer(question, right_answr, name):
             right_answ_cnt += 1
         else:
-            print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')

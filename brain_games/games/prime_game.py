@@ -1,14 +1,11 @@
-import prompt
 import math
 from random import randint
-from brain_games.games.check_answer import check_answer
+from brain_games.games.check_answer import check_answer, greet
 
 
 def prime_game():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    name = greet(rules)
     right_answ_cnt = 0
     while right_answ_cnt < 3:
         num = randint(1, 150)
@@ -17,10 +14,9 @@ def prime_game():
             right_answr = 'yes'
         else:
             right_answr = 'no'
-        if check_answer(question, right_answr):
+        if check_answer(question, right_answr, name):
             right_answ_cnt += 1
         else:
-            print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
 
