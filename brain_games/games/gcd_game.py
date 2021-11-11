@@ -1,20 +1,13 @@
 from random import randint
-from brain_games.games.check_answer import check_answer, greet
 
 
 def gcd_game():
     rules = 'Find the greatest common divisor of given numbers.'
-    name = greet(rules)
-    right_answ_cnt = 0
-    while right_answ_cnt < 3:
-        num1 = randint(1, 100)
-        num2 = randint(1, 100)
-        question = str(num1) + ' ' + str(num2)
-        right_answr = find_gcd(num1, num2)
-        if check_answer(question, right_answr, name, right_answ_cnt):
-            right_answ_cnt += 1
-        else:
-            return
+    num1 = randint(1, 100)
+    num2 = randint(1, 100)
+    question = str(num1) + ' ' + str(num2)
+    right_answer = find_gcd(num1, num2)
+    return (rules, question, right_answer)
 
 
 def find_gcd(num1, num2):
