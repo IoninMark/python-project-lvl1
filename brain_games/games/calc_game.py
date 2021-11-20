@@ -1,11 +1,24 @@
 from random import randint, choice
 
 
-def calc_game():
-    rules = 'What is the result of the expression?'
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
-    operations_list = ['+', '-', '*']
-    question = str(num1) + ' ' + choice(operations_list) + ' ' + str(num2)
-    right_answer = eval(question)
-    return (rules, question, right_answer)
+GAME_INFO = 'What is the result of the expression?'
+
+
+def make_question():
+    num1 = randint(1, 50)
+    num2 = randint(1, 50)
+    operation = choice(['+', '-', '*'])
+    question = str(num1) + ' ' + operation + ' ' + str(num2)
+    right_answer = calculate_expression(num1, num2, operation)
+    return (question, right_answer)
+
+
+def calculate_expression(num1, num2, operation):
+    result = 0
+    if operation == '+':
+        result = num1 + num2
+    elif operation == '-':
+        result = num1 - num2
+    else:
+        result = num1 * num2
+    return result

@@ -1,8 +1,10 @@
 from random import randint
 
 
-def even_game():
-    rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_INFO = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def make_question():
     num = randint(1, 100)
     right_answer = 'yes' if num % 2 == 0 else 'no'
-    return (rules, num, right_answer)
+    return (num, right_answer)

@@ -2,11 +2,11 @@
 [![Actions Status](https://github.com/IoninMark/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/IoninMark/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c00053ebd825ce1e3c7c/maintainability)](https://codeclimate.com/github/IoninMark/python-project-lvl1/maintainability)
 ![example workflow](https://github.com/IoninMark/python-project-lvl1/actions/workflows/lint-test.yml/badge.svg)
-[![asciicast](https://asciinema.org/a/LaaNko38u5YSxWaZU3JSepxyq.svg)](https://asciinema.org/a/LaaNko38u5YSxWaZU3JSepxyq)
-[![asciicast](https://asciinema.org/a/N0aPTdfcq5LJNR82Vi4BlzkOo.svg)](https://asciinema.org/a/N0aPTdfcq5LJNR82Vi4BlzkOo)
-[![asciicast](https://asciinema.org/a/RcOyOQAK266Pcc4RdssFqeUDu.svg)](https://asciinema.org/a/RcOyOQAK266Pcc4RdssFqeUDu)
-[![asciicast](https://asciinema.org/a/l7BnfM05g7z9Bw3QFzXDhDruv.svg)](https://asciinema.org/a/l7BnfM05g7z9Bw3QFzXDhDruv)
-[![asciicast](https://asciinema.org/a/n7HfF5ac9gKcSl7bIY9RLkbud.svg)](https://asciinema.org/a/n7HfF5ac9gKcSl7bIY9RLkbud)
+[![asciicast](https://asciinema.org/a/htqzCdFch81k1DwON29Wcvloe.svg)](https://asciinema.org/a/htqzCdFch81k1DwON29Wcvloe)
+[![asciicast](https://asciinema.org/a/dP5p8a7zZI0pAquJMuVU8t4JI.svg)](https://asciinema.org/a/dP5p8a7zZI0pAquJMuVU8t4JI)
+[![asciicast](https://asciinema.org/a/uyUUBehmUSPPeUyus1bf77t7N.svg)](https://asciinema.org/a/uyUUBehmUSPPeUyus1bf77t7N)
+[![asciicast](https://asciinema.org/a/Ve0rtS3lBvcQsoldfRHYFw9qz.svg)](https://asciinema.org/a/Ve0rtS3lBvcQsoldfRHYFw9qz)
+[![asciicast](https://asciinema.org/a/yj75muBtRJ86Ro6Pejyb3QIES.svg)](https://asciinema.org/a/yj75muBtRJ86Ro6Pejyb3QIES)
 ### About
 This is the first Hexlet project "Brain Games"
 There are 5 games in it:
