@@ -5,7 +5,7 @@ from random import randint
 GAME_INFO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def make_question():
+def make_question_and_answer():
     num = randint(1, 150)
     question = str(num)
     right_answer = 'yes' if is_prime(num) else 'no'
