@@ -10,4 +10,5 @@ def welcome_user():
 
 def ask(question):
     print(f'Question: {question}')
-    return prompt.string('Your answer: ')
+    answer = prompt.string('Your answer: ')
+    return answer
